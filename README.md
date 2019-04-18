@@ -13,19 +13,19 @@ The problem is treated as a classification problem as the final goal is to deter
 **Step 1:** Import Packages and Dataset
 >* Import packages for data pre-processing, visualization, modeling and evaulating the accuracy of the models.
 >* Import the dataset to be used for analysis. Since its an old competition and submission is no longer accepted, only the *train.csv* data is imported for this analysis. The solution is then developed by splitting the *train.csv* dataset 50/50 for training and evaluating the models on unseen data.
-<br>
+
 **Step 2:** Feature Inspection
 >* A quick inspection of the dataset shows to check features in the dataset are categorical\numerical and if any of them has any null values. This step helps to determine how the data should be processed prior applying a model.
-<br>
+
 **Step 3:** Feature Selection
 >* To identify features that are critical for modeling, a feature selection step is performed using the univariate selection method from available scikit modules.
-<br>
+
 **Step 4:** Feature Encoding
 Once the top 6 significant features are idenitified and uncenssary features are eliminated from the dataset, a hashing trick was applied to encode the categorical features prior applying different machine learning models to the dataset.
-<br>
+
 **Step 5:** Training Different Models and Performance Evaluation based on Cross Validation Scores
 Four different classification were then applied on the training dataset and the best performing model was then selected based on the cross validation scores.
-<br>
+
 **Step 6:** Compute ROC curve with cross validation for Model Performance on Unseen Data
 Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores. 
 
