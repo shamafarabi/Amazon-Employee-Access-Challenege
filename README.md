@@ -1,4 +1,5 @@
- 
+
+
 # 1. Amazon-Employee-Access-Challenege
 * This respository explores the implementation of different machine learning concepts (Feature Selection, Feature Encoding,Cross Validation, ROC_AUC, Classification Models etc.) by developing a ML solution with the dataset available from Amazon Employee Access Kaggle's Challenge. 
 * A link to the Kaggle for this competition can be found [here](https://www.kaggle.com/c/amazon-employee-access-challenge). 
@@ -27,5 +28,14 @@ The problem is treated as a classification problem as the final goal is to deter
 >* Four different classification were then applied on the training dataset and the best performing model was then selected based on the cross validation scores.
 
 **Step 6:** Compute ROC curve with cross validation for Model Performance on Unseen Data
->* Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores. 
+>* Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores.
+
+# Conclusion
+* Among the four classification models used, Random Forest was the best perofrming model in terms of CV score. The CV score helps to evaluate how the model would perform on unseen data. 
+
+* When random forest model was applied to unseen data, the computed ROC_AUC score was 0.68 which is slightly les than the performance of the model (0.7057) on the training dataset. 
+
+# Future Work
+ * Hyperparameter tuning of the classification models.
+ * Reducing collision loss during hash encoding. 
 
