@@ -1,5 +1,4 @@
 
-
 # 1. Amazon-Employee-Access-Challenege
 * This respository explores the implementation of different machine learning concepts (Feature Selection, Feature Encoding,Cross Validation, ROC_AUC, Classification Models etc.) by developing a ML solution with the dataset available from Amazon Employee Access Kaggle's Challenge. 
 * A link to the Kaggle for this competition can be found [here](https://www.kaggle.com/c/amazon-employee-access-challenge). 
@@ -7,7 +6,13 @@
 # 2.Goal of the Project
 The objective of this competition is to build a model, learned using historical data, that will determine an employee's access needs, such that manual access transactions (grants and revokes) are minimized as the employee's attributes change over time. The model will take an employee's role information and a resource code and will return whether or not access should be granted.
 
-# 3.Solution Approach
+# 3 File Descriptions:
+
+*AmazonEmployeeAccess.ipynb* - the code and explanation of the steps taken
+*train.csv* - is the dataset used in this problem and included in the repository
+*requirements.txt* - a list of packages used for this project
+
+# 4.Solution Approach
 
 The problem is treated as a classification problem as the final goal is to determine whether a employee should be a given access ('1) or not ('0'). The steps followed are as below-
 
@@ -30,12 +35,12 @@ The problem is treated as a classification problem as the final goal is to deter
 **Step 6:** Compute ROC curve with cross validation for Model Performance on Unseen Data
 >* Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores.
 
-# Conclusion
+# 5.Conclusion
 * Among the four classification models used, Random Forest was the best perofrming model in terms of CV score. The CV score helps to evaluate how the model would perform on unseen data. 
 
 * When random forest model was applied to unseen data, the computed ROC_AUC score was 0.68 which is slightly les than the performance of the model (0.7057) on the training dataset. 
 
-# Future Work
+# 6.Future Work
  * Hyperparameter tuning of the classification models.
  * Reducing collision loss during hash encoding. 
 
