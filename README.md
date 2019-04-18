@@ -21,11 +21,11 @@ The problem is treated as a classification problem as the final goal is to deter
 >* To identify features that are critical for modeling, a feature selection step is performed using the univariate selection method from available scikit modules.
 
 **Step 4:** Feature Encoding
-Once the top 6 significant features are idenitified and uncenssary features are eliminated from the dataset, a hashing trick was applied to encode the categorical features prior applying different machine learning models to the dataset.
+>*Once the top 6 significant features are idenitified and uncenssary features are eliminated from the dataset, a hashing trick was applied to encode the categorical features prior applying different machine learning models to the dataset.
 
 **Step 5:** Training Different Models and Performance Evaluation based on Cross Validation Scores
-Four different classification were then applied on the training dataset and the best performing model was then selected based on the cross validation scores.
+>*Four different classification were then applied on the training dataset and the best performing model was then selected based on the cross validation scores.
 
 **Step 6:** Compute ROC curve with cross validation for Model Performance on Unseen Data
-Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores. 
+>*Once the best model is identified in the previous step, it is used to the predict on the test data obtained  from the 50/50 split. Accuracy  of the best model in predicting the test data is then calculating the ROC curve and AUC scores. 
 
