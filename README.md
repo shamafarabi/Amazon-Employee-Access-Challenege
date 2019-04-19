@@ -1,5 +1,5 @@
 
-# 1. Amazon-Employee-Access-Challenege
+# 1. Amazon-Employee-Access-Challenge
 This respository explores the implementation of different machine learning concepts (Feature Selection, Feature Encoding,Cross Validation, ROC_AUC, Classification Models etc.) by developing a ML solution with the dataset available from Amazon Employee Access Kaggle's Challenge. 
 A link to the Kaggle for this competition can be found [here](https://www.kaggle.com/c/amazon-employee-access-challenge). 
 
